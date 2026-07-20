@@ -1,6 +1,6 @@
 # Xarajatlar Kundaligi API
 
-Bu shaxsiy xarajatlarni hisob-kitob qilib borish uchun Django REST Framework (DRF) orqali yozilgan backend loyihasi.
+Bu shaxsiy xarajatlarni hisob-kitob qilib borish uchun Django REST Framework orqali yozilgan backend loyihasi.
 
 ## Texnologiyalar
 * Django
@@ -14,12 +14,13 @@ Bu shaxsiy xarajatlarni hisob-kitob qilib borish uchun Django REST Framework (DR
 1. Virtual muhit ochib, kerakli kutubxonalarni yuklab olasiz:
 ```bash
 python -m venv venv
-source venv/Scripts/activate  # Windows uchun
-# Linux yoki Mac uchun: source venv/bin/activate
-pip install -r requirements.txt
+source venv/Scripts/activate  
 
-Ma'lumotlar bazasini tayyorlash (Migratsiya qilish):
-
+Migratiya qilish:
 Bash
 python manage.py makemigrations
 python manage.py migrate
+
+Serverni ishga tushirish
+Bash
+python manage.py runserver
