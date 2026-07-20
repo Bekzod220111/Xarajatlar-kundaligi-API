@@ -16,7 +16,7 @@ Bu shaxsiy xarajatlarni hisob-kitob qilib borish uchun Django REST Framework orq
 python -m venv venv
 source venv/Scripts/activate  
 
-Migratiya qilish:
+Mi'gratiya qilish:
 Bash
 python manage.py makemigrations
 python manage.py migrate
