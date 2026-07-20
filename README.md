@@ -18,11 +18,13 @@ source venv/Scripts/activate
 
 Migratiya qilish:
 
-Bash
+```bash
+
 python manage.py makemigrations
 python manage.py migrate
 
 Serverni ishga tushirish
 
-Bash
+```bash
+
 python manage.py runserver
