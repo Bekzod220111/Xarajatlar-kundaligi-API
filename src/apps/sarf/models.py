@@ -9,9 +9,9 @@ class Category(models.Model):
 
 class Expense(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    summa = models.DecimalField(max_digits=10, decimal_places=2)
+    summa = models.PositiveIntegerField()
     izoh = models.TextField(blank=True, null=True)
-    xarajat_sanasi = models.DateField(auto_now=True)
+    xarajat_sanasi = models.DateTimeField()
 
     def __str__(self):
         return self.summa
