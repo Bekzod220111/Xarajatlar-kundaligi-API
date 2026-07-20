@@ -17,10 +17,8 @@ python -m venv venv
 source venv/Scripts/activate  
 
 2. Migratiya qilish
-```bash
 python manage.py makemigrations
 python manage.py migrate
 
 3. Serverni ishga tushirish
-```bash
 python manage.py runserver
